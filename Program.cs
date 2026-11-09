@@ -29,10 +29,10 @@ while (true)
 
     else if (valasz == "3")
     {
+        Console.Write("Mi alapján fogsz keresni: 1. Személy neve alapján | 2. Jármű rendszáma alapján | 3. Jármű típusa alapáján | 4. Jármű márkája alapján");
+        string keresvalasz=Console.ReadLine();
         Console.Write("Keresés: ");
         string keres= Console.ReadLine();
-        Console.Write("Mi alapján fogsz keresni: 1. Személy neve alapján | 2. Jármű rendszáma alapján | 3. Jármű típusa alapáján | 4. Jermű márkája alapján");
-        string keresvalasz=Console.ReadLine();
         foreach(string i in sorok)
         {
             if (i.Split(";").Count() == 4 && keresvalasz=="1") {
